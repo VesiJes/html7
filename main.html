@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Великдень 2026</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: #f0f7ff;
+            color: #334155;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 900px;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px);
+            padding: 20px 40px;
+            border-bottom: 3px solid #ef4444;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .badge {
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: #64748b;
+        }
+
+        section {
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #0f172a;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+
+        .gallery-box {
+            height: 350px;
+            position: relative;
+            background: #ffffff;
+            border: 2px dashed #cbd5e1;
+            border-radius: 20px;
+            margin: 20px 0;
+        }
+
+        .gallery-item {
+            position: absolute;
+            max-width: 220px;
+            max-height: 160px;
+            background-color: #7ecfbb;
+            border: 5px solid white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .pic-1 { top: 30px; left: 40px; transform: rotate(-5deg); background-image: url('https://picsum.photos'); }
+        .pic-2 { top: 70px; left: 320px; transform: rotate(3deg); background-image: url('https://picsum.photos'); }
+        .pic-3 { top: 40px; right: 40px; transform: rotate(-2deg); background-image: url('https://picsum.photos'); }
+
+        .btn-up {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background: #0f172a;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            z-index: 1001;
+        }
+
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 30px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .shimmer {
+            font-weight: bold;
+            background: linear-gradient(90deg, #0f172a, #ef4444, #0f172a);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 4s linear infinite;
+        }
+
+        @keyframes shine { to { background-position: 200% center; } }
+    </style>
+</head>
+<body>
+
+    <a href="#" class="btn-up">⬆️</a>
+
+    <div class="container">
+        <header>
+            <h1 class="shimmer">Великдень 2026 🥚</h1>
+            <div class="badge">12 Квітня</div>
+        </header>
+
+        <section id="intro">
+            <h2>Про свято 🌷</h2>
+            <p>Світле Воскресіння Христове — час для оновлення, родинного затишку та щирих надій. У 2026 році ми зустрічаємо весну з особливою вірою у світло.</p>
+        </section>
+
+        <section id="recipes">
+            <h2>Великоднє меню 🍽️</h2>
+            <div class="card">
+                <h3>Традиційна Паска 🍞</h3>
+                <p>Класичний рецепт на жовтках з великою кількістю цукатів та ідеальною білою глазур'ю.</p>
+            </div>
+            <div class="card">
+                <h3>Крашанки та Писанки 🎨</h3>
+                <p>Мистецтво декорування яєць натуральними барвниками: від цибулиння до куркуми.</p>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Галерея традицій ✨</h2>
+            <div class="gallery-box">
+                <div class="gallery-item pic-1"><img src="./img/завантаження (1).jpg" alt=""></div>
+                <div class="gallery-item pic-2"><img src="./img/завантаження (2).jpg" alt=""></div>
+                <div class="gallery-item pic-3"><img src="./img/завантаження.jpg" alt=""></div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Контакти: info@easter2026.ua | +380 44 000 00 00</p>
+            <p>© 2026 Великдень. Новий старт замість зловісної ночі.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
